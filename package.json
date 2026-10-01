@@ -1,0 +1,14 @@
+{
+  "name": "coop-game-backend",
+  "version": "1.0.0",
+  "description": "可转移效用合作博弈分配与联盟稳定性后端（TU Game / Shapley / Core / 最小违约额）",
+  "type": "module",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist-test",
+    "start": "node dist/cli.js serve",
+    "demo": "npm run build && node dist/cli.js demo"
+  },
+  "license": "MIT"
+}
