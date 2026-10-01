@@ -1,0 +1,22 @@
+{
+  "name": "tu-game-backend",
+  "version": "1.0.0",
+  "description": "可转移效用合作博弈（TU Game）分配与联盟稳定性后端：精确 Shapley 值、核心核验、最小违约额 LP",
+  "type": "module",
+  "bin": {
+    "tugame": "dist/src/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --no-warnings dist/src/server.js",
+    "dev": "node --no-warnings --import tsx src/server.ts",
+    "cli": "node --no-warnings --import tsx src/cli.ts",
+    "demo": "node --no-warnings --import tsx scripts/demo.ts",
+    "test": "node --no-warnings --import tsx --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
